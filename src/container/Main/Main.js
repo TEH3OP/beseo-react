@@ -9,7 +9,6 @@ import './style_offer_page.css'
 import './style_result_page.css'
 import './style_the_best.css'
 import './style_welcome_page.css'
-import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt'
 
 const Main = () => {
     return (
@@ -254,7 +253,9 @@ const Main = () => {
                     <div className="row">
                         <div className="col-sm-4 col-xs-12">
                             <div className="love-us-grid-frame">
-                                <SignalCellularAltIcon />
+                                <span className="material-icons">
+                                    signal_cellular_alt
+                                </span>
                                 <div>
                                     <div className="love-us-grid-title">
                                         High positions
@@ -361,12 +362,9 @@ const Main = () => {
                 <div className="container">
                     <div className="boost-your-pos-frame">
                         <div>Boost your position in</div>
-                        <img
-                            src="styles/pics/home_seo_google.png"
-                            alt="Google"
-                        />
+                        <img src="pics/home_seo_google.png" alt="Google" />
                         <div>or</div>
-                        <img src="styles/pics/home_seo_bing.png" alt="Bing" />
+                        <img src="pics/home_seo_bing.png" alt="Bing" />
                     </div>
                 </div>
             </div>

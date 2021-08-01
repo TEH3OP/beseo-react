@@ -1,7 +1,6 @@
 import React from 'react'
 import './style_header.css'
 import '../../styles/style.css'
-import SearchIcon from '@material-ui/icons/Search'
 
 const Header = () => {
     return (
@@ -21,7 +20,7 @@ const Header = () => {
                             <li>Buy now</li>
                         </ul>
                         <button className="header-button-search">
-                            <SearchIcon />
+                            <span className="material-icons"> search </span>
                         </button>
                     </nav>
 
