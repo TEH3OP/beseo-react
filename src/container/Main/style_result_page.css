@@ -1,0 +1,71 @@
+.result-page-background{
+    background-color: #ECE5D4;
+    /* padding: 100px 0; */
+    /* height: 500px; */
+}
+
+
+.result-page-image-browser {
+    position: relative;
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    /* left: 0;
+    bottom: 0; */
+    margin-top: -70px;
+    z-index: 30;
+}
+
+.result-page-title{
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #444444;
+    margin-top: 5vw;
+    margin-bottom: 30px;
+}
+
+.result-page-frame{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.result-page-icon{
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+.result-page-icon1{
+    background-image: url(../../styles/pics/home_seo_pay_icon1.png);
+}
+
+.result-page-icon2{
+    background-image: url(../../styles/pics/home_seo_pay_icon2.png);
+}
+
+
+.result-page-decription-title{
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.result-page-decription{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.result-page-button{
+    margin-bottom: 50px;
+}
+
+.result-page-button::before{
+    font-family: "Material Icons";
+    content: "\e850";
+    color: #444444;
+    padding-right: 10px;
+}

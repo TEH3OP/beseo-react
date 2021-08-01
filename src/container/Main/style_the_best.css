@@ -1,0 +1,38 @@
+.the-best-background{
+    background-color: #e0f1f6;
+    padding-top: 88px;
+    padding-bottom: 50px;
+}
+
+.the-best-title{
+    color: #3c6c7a;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.the-best-description{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin-bottom: 30px
+}
+
+.the-best-button{
+    margin-bottom: 50px;
+}
+
+
+.the-best-button::after{
+    font-family: "Material Icons";
+    content: "\e2c4";
+    color: #444444;
+    padding-left: 10px;
+}
+
+.the-best-image{
+    max-width: 100%;
+    height: auto;
+}

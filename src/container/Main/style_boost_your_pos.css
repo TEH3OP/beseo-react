@@ -1,0 +1,22 @@
+.boost-your-pos-background {
+    padding: 40px 0;
+    background-color: #ece5d4;
+}
+
+.boost-your-pos-frame {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.boost-your-pos-frame>div {
+    color: #a49f93;  
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.boost-your-pos-frame>img{
+    margin-left: 20px;
+    margin-right: 20px;
+}

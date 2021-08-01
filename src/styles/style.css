@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #444444;
+}
+
+[class^=content]{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+[class*=title]{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #444444;
+}
+
+[class$=-button]{
+    width: fit-content;
+    display: block;
+    background: #40AC87;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.description{
+    color: #626262;
+    line-height: 20px;
+}
+

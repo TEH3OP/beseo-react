@@ -1,0 +1,33 @@
+.love-us-background{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+}
+
+.love-us-main-title{
+    font-size: 38px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.love-us-grid-title{
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.love-us-grid-frame{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.love-us-grid-frame>span{
+    height: 80px;
+    flex: 0 0 80px;
+    line-height: 80px;
+    text-align: center;
+    color:#3fac87;
+    font-size: 60px;
+}
+
+

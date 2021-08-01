@@ -1,0 +1,59 @@
+.offer-page-background {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.offer-page-title {
+    font-size: 30px;
+}
+
+.offer-page-icon {
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.offer-page-icon1 {
+    background-image: url(../../styles/pics/home_seo_offer_icon1.png);
+}
+
+.offer-page-icon2 {
+    background-image: url(../../styles/pics/home_seo_offer_icon2.png);
+}
+
+.offer-page-icon3 {
+    background-image: url(../../styles/pics/home_seo_offer_icon3.png);
+}
+
+.offer-page-icon4 {
+    background-image: url(../../styles/pics/home_seo_offer_icon4.png);
+}
+
+.offer-page-description-title {
+    margin: 20px 0;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.offer-page-margin-top>div{
+    margin-top: 50px;
+    animation: animation-zoom 1s;
+}
+
+@keyframes animation-zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.offer-page-right-line {
+    border-right: 1px solid #cccccc;
+}
