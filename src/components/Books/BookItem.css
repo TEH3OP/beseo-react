@@ -1,0 +1,45 @@
+.books-background{
+    background-color: beige;
+    padding-top: 30px;
+}
+
+.books-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.book-frame{
+    margin-bottom: 30px;
+}
+
+.book-frame>img{
+    width: 50%;
+    height: auto;
+}
+
+.book-name-title{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #444444;
+}
+
+.book-occupation-title{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    color: #898989;
+}
+
+.book-category{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.book-category-button{
+    margin-left: 10px;
+}
