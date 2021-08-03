@@ -7,9 +7,13 @@ import '../../assets/styles/style_grid.css'
 import './BookItem.css'
 
 const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
-    let bookFiteredArray = bookArray.filter(({ category }) => {
+    console.log(selectedCategory)
+
+    const bookFiteredArray = bookArray.filter(({ category }) => {
         return category === selectedCategory || selectedCategory === ''
     })
+
+    console.log(bookFiteredArray)
 
     // console.log('BookList selected:' + selectedCategory)
 
@@ -17,7 +21,13 @@ const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
         <>
             <div className="books-background">
                 <div className="container">
-                    <div className="books-title">Books list</div>
+                    <div className="books-title">
+                        {selectedCategory == ''
+                            ? 'Books list'
+                            : 'Selected books category: ' +
+                              selectedCategory +
+                              '. Click Home to return'}
+                    </div>
                     <div className="row">
                         {bookFiteredArray.map(
                             ({ id, name, description, category, image }) => {
@@ -25,7 +35,7 @@ const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
                                     return (
                                         <BookItem
                                             key={id}
-                                            id={id}
+                                            // id={id}
                                             name={name}
                                             description={description}
                                             category={category}
@@ -33,7 +43,6 @@ const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
                                             onFilterButtonClick={
                                                 onFilterButtonClick
                                             }
-                                            selectedCategory={selectedCategory}
                                         />
                                     )
                                 }

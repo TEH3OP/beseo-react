@@ -6,31 +6,31 @@ import './BookItem.css'
 import { useHistory } from 'react-router-dom'
 
 const BookItem = ({
-    id,
+    // id,
     name,
     description,
     category,
     image,
     onFilterButtonClick,
-    categoryClicked = '',
+    // categoryClicked = '',
 }) => {
     const history = useHistory()
     const categoryClick = (categoryClicked) => {
-        if (categoryClicked !== '') {
-            console.log('Category: ' + categoryClicked)
+        console.log('Category: ' + categoryClicked)
+        if (onFilterButtonClick != undefined) {
             onFilterButtonClick(categoryClicked)
+            history.push('/categories')
         }
-        history.push('/categories')
     }
 
     return (
         <div className="col-sm-4 col-xs-12">
-            <div>{id}</div>
+            {/* <div>{id}</div> */}
             <div className="book-category">
                 <div>Category:</div>
                 <button
                     className="book-category-button"
-                    disabled={categoryClicked !== ''}
+                    // disabled={categoryClicked !== ''}
                     onClick={() => categoryClick(category)}
                 >
                     {category}
@@ -47,13 +47,13 @@ const BookItem = ({
 }
 
 BookItem.propTypes = {
-    id: PropTypes.number,
+    // id: PropTypes.number,
     name: PropTypes.string,
     description: PropTypes.string,
     category: PropTypes.string,
     image: PropTypes.string,
     onFilterButtonClick: PropTypes.func,
-    categoryClicked: PropTypes.string,
+    // categoryClicked: PropTypes.string,
 }
 
 export default BookItem

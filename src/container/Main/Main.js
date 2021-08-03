@@ -8,7 +8,7 @@ const Main = () => {
 
     const onFilterButtonClick = (clickedCategory) => {
         setCategory(clickedCategory)
-        // console.log('Main clicked:' + clickedCategory)
+        console.log('Main clicked:' + clickedCategory)
     }
 
     // console.log('Main selected:' + selectedCategory)
