@@ -8,7 +8,7 @@ const Main = () => {
 
     const onFilterButtonClick = (clickedCategory) => {
         setCategory(clickedCategory)
-        console.log('Main clicked:' + clickedCategory)
+        // console.log('Main clicked:' + clickedCategory)
     }
 
     // console.log('Main selected:' + selectedCategory)
@@ -19,7 +19,10 @@ const Main = () => {
                 <HomePage onFilterButtonClick={onFilterButtonClick} />
             </Route>
             <Route path="/categories">
-                <CategoriesPage selectedCategory={selectedCategory} />
+                <CategoriesPage
+                    selectedCategory={selectedCategory}
+                    onFilterButtonClick={onFilterButtonClick}
+                />
             </Route>
         </Switch>
     )

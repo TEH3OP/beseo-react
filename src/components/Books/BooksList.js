@@ -7,15 +7,11 @@ import '../../assets/styles/style_grid.css'
 import './BookItem.css'
 
 const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
-    console.log(selectedCategory)
+    // console.log(selectedCategory)
 
     const bookFiteredArray = bookArray.filter(({ category }) => {
         return category === selectedCategory || selectedCategory === ''
     })
-
-    console.log(bookFiteredArray)
-
-    // console.log('BookList selected:' + selectedCategory)
 
     return (
         <>
@@ -23,7 +19,7 @@ const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
                 <div className="container">
                     <div className="books-title">
                         {selectedCategory == ''
-                            ? 'Books list'
+                            ? 'Web programming books'
                             : 'Selected books category: ' +
                               selectedCategory +
                               '. Click Home to return'}

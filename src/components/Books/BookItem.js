@@ -16,11 +16,11 @@ const BookItem = ({
 }) => {
     const history = useHistory()
     const categoryClick = (categoryClicked) => {
-        console.log('Category: ' + categoryClicked)
-        if (onFilterButtonClick != undefined) {
-            onFilterButtonClick(categoryClicked)
-            history.push('/categories')
-        }
+        // console.log('Category: ' + categoryClicked)
+        // if (onFilterButtonClick != undefined) {
+        onFilterButtonClick(categoryClicked)
+        history.push('/categories')
+        // }
     }
 
     return (
