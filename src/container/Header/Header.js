@@ -1,6 +1,7 @@
 import React from 'react'
 import './style_header.css'
-import '../../styles/style.css'
+import '../../assets/styles/style.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -8,16 +9,28 @@ const Header = () => {
             <header className="header-background">
                 <div className="content-header">
                     <a href="#">
-                        <img src="pics/logo.png" alt="Logo" />
+                        <img src="images/logo.png" alt="Logo" />
                     </a>
                     <nav className="header-navigation">
                         <ul className="header-navigation-list">
-                            <li>Home</li>
-                            <li>How it works?</li>
-                            <li>Help Center</li>
-                            <li>Careers</li>
-                            <li>Contact</li>
-                            <li>Buy now</li>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="#"> How it works?</Link>
+                            </li>
+                            <li>
+                                <Link to="#">Help Center</Link>
+                            </li>
+                            <li>
+                                <Link to="#">Careers</Link>
+                            </li>
+                            <li>
+                                <Link to="#">Contact</Link>
+                            </li>
+                            <li>
+                                <Link to="#">Buy now</Link>
+                            </li>
                         </ul>
                         <button className="header-button-search">
                             <span className="material-icons"> search </span>

@@ -1,28 +1,39 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import BookItem from './BookItem'
 import bookArray from './booksArray'
-import '../../styles/style.css'
-import '../../styles/style_grid.css'
+import '../../assets/styles/style.css'
+import '../../assets/styles/style_grid.css'
 import './BookItem.css'
 
-const BooksList = () => {
+const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
+    let bookFiteredArray = bookArray.filter(({ category }) => {
+        return category === selectedCategory || selectedCategory === ''
+    })
+
+    // console.log('BookList selected:' + selectedCategory)
+
     return (
         <>
             <div className="books-background">
                 <div className="container">
                     <div className="books-title">Books list</div>
                     <div className="row">
-                        {bookArray.map(
+                        {bookFiteredArray.map(
                             ({ id, name, description, category, image }) => {
                                 {
                                     return (
                                         <BookItem
+                                            key={id}
                                             id={id}
                                             name={name}
                                             description={description}
                                             category={category}
                                             image={image}
+                                            onFilterButtonClick={
+                                                onFilterButtonClick
+                                            }
+                                            selectedCategory={selectedCategory}
                                         />
                                     )
                                 }
@@ -35,8 +46,9 @@ const BooksList = () => {
     )
 }
 
-// BooksList.propTypes = {
-//     addProductToCart: PropTypes.func,
-// }
+BooksList.propTypes = {
+    onFilterButtonClick: PropTypes.func,
+    selectedCategory: PropTypes.string,
+}
 
 export default BooksList
