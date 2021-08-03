@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import '../../assets/styles/style.css'
 import '../../assets/styles/style_grid.css'
 import './BookItem.css'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 
 const BookItem = ({
     // id,
@@ -15,12 +15,13 @@ const BookItem = ({
     // categoryClicked = '',
 }) => {
     const history = useHistory()
+    const location = useLocation()
     const categoryClick = (categoryClicked) => {
         // console.log('Category: ' + categoryClicked)
         // if (onFilterButtonClick != undefined) {
         onFilterButtonClick(categoryClicked)
-        history.push('/categories')
-        // }
+        if (location.pathname != '/categories') history.push('/categories')
+        // console.log(location)
     }
 
     return (

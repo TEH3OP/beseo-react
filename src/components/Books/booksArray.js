@@ -1,5 +1,21 @@
 const booksArray = [
     {
+        id: 5,
+        name: "HTML 101 The Essential Beginner's Guide to Learning HTML Coding",
+        description:
+            'With so much information about web development and online coding tutorials out there, it can be difficult to know where to start. Many guides, websites and books can be confusing and don’t make it easy for those starting out, wanting to build a solid foundation and understanding.',
+        category: 'HTML',
+        image: '/books_image/5_html101.jpg',
+    },
+    {
+        id: 6,
+        name: 'HTML CSS in 8 Hours, For Beginners, Learn Coding Fast!',
+        description:
+            'This Book Absolutely for Beginners:"HTML CSS in 8 Hours" covers all essential HTML and CSS knowledge. You can learn complete primary skills of HTML and CSS fast and easily.',
+        category: 'HTML',
+        image: '/books_image/6_html_css.jpg',
+    },
+    {
         id: 1,
         name: 'FullStack React',
         description:
@@ -30,22 +46,6 @@ const booksArray = [
             'WordPress is an extremely popular and amazingly powerful web content management system. If you want to spend less time struggling with complex instructions, and more time building sites that make you proud, this is the book for you!',
         category: 'Wordpress',
         image: '/books_image/4_wordpress_for_beginners.jpg',
-    },
-    {
-        id: 5,
-        name: "HTML 101 The Essential Beginner's Guide to Learning HTML Coding",
-        description:
-            'With so much information about web development and online coding tutorials out there, it can be difficult to know where to start. Many guides, websites and books can be confusing and don’t make it easy for those starting out, wanting to build a solid foundation and understanding.',
-        category: 'HTML',
-        image: '/books_image/5_html101.jpg',
-    },
-    {
-        id: 6,
-        name: 'HTML CSS in 8 Hours, For Beginners, Learn Coding Fast!',
-        description:
-            'This Book Absolutely for Beginners:"HTML CSS in 8 Hours" covers all essential HTML and CSS knowledge. You can learn complete primary skills of HTML and CSS fast and easily.',
-        category: 'HTML',
-        image: '/books_image/6_html_css.jpg',
     },
 ]
 
