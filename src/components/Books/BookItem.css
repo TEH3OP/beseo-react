@@ -10,7 +10,7 @@
 }
 
 .book-frame{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .book-frame>img{
@@ -24,14 +24,7 @@
     font-size: 18px;
     font-weight: 300;
     color: #444444;
-}
-
-.book-occupation-title{
-    margin-left: 10px;
-    font-size: 15px;
-    font-weight: 700;
-    font-style: italic;
-    color: #898989;
+    text-transform: none;
 }
 
 .book-category{

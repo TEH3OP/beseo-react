@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, useParams, useRouteMatch } from 'react-router-dom'
+import BookItem from '../../components/Books/BookItem'
+import booksArray from '../../components/Books/booksArray'
 import CategoriesPage from '../../pages/CategoriesPage/CategoriesPage'
 import HomePage from '../../pages/HomePage/HomePage'
 
@@ -11,8 +14,6 @@ const Main = () => {
         // console.log('Main clicked:' + clickedCategory)
     }
 
-    // console.log('Main selected:' + selectedCategory)
-
     return (
         <Switch>
             <Route path="/" exact>
@@ -23,6 +24,9 @@ const Main = () => {
                     selectedCategory={selectedCategory}
                     onFilterButtonClick={onFilterButtonClick}
                 />
+            </Route>
+            <Route path="/book/:id">
+                <BookItem {...booksArray[0]} />
             </Route>
         </Switch>
     )

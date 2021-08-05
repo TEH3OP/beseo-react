@@ -33,5 +33,7 @@ body{
 .description{
     color: #626262;
     line-height: 20px;
+    text-align: left;
+    text-transform: none;
 }
 
