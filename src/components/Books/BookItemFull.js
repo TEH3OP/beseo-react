@@ -14,8 +14,8 @@ const BookItemFull = () => {
                 <h2>Category:{books[bookId].category}</h2>
             </div>
 
-            <div className="book-frame">
-                <img src={books[bookId].image} alt="The book" />
+            <div>
+                <img src={books[bookId].image} alt="The book" className={{}} />
                 <div className="book-name-title">{books[bookId].name}</div>
                 <div className="description">{books[bookId].description}</div>
             </div>
