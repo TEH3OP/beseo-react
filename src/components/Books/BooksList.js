@@ -41,7 +41,7 @@ const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
                                         return (
                                             <BookItem
                                                 key={id}
-                                                // id={id}
+                                                id={id}
                                                 name={name}
                                                 description={description}
                                                 category={category}

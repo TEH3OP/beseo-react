@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { Route, Switch, useParams, useRouteMatch } from 'react-router-dom'
 import BookItem from '../../components/Books/BookItem'
+import BookItemFull from '../../components/Books/BookItemFull'
 import booksArray from '../../components/Books/booksArray'
 import CategoriesPage from '../../pages/CategoriesPage/CategoriesPage'
 import HomePage from '../../pages/HomePage/HomePage'
@@ -25,9 +26,7 @@ const Main = () => {
                     onFilterButtonClick={onFilterButtonClick}
                 />
             </Route>
-            <Route path="/book/:id">
-                <BookItem {...booksArray[0]} />
-            </Route>
+            <Route path="/book/:bookId" component={BookItemFull} />
         </Switch>
     )
 }

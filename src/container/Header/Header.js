@@ -9,7 +9,7 @@ const Header = () => {
             <header className="header-background">
                 <div className="content-header">
                     <a href="#">
-                        <img src="images/logo.png" alt="Logo" />
+                        <img src="/images/logo.png" alt="Logo" />
                     </a>
                     <nav className="header-navigation">
                         <ul className="header-navigation-list">

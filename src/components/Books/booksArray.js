@@ -49,4 +49,14 @@ const booksArray = [
     },
 ]
 
+export const getBooksObj = (array) => {
+    return array.reduce(
+        (object, book) => ({
+            ...object,
+            [book.id]: book,
+        }),
+        {}
+    )
+}
+
 export default booksArray
