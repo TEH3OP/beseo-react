@@ -8,14 +8,21 @@ const BookItemFull = () => {
     const books = getBooksObj(booksArray)
 
     return (
-        <Container>
-            <div>{bookId}</div>
+        <Container
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                maxWidth: '320px',
+            }}
+        >
+            <h1>Book id: {bookId}</h1>
             <div className="book-category">
                 <h2>Category:{books[bookId].category}</h2>
             </div>
 
             <div>
-                <img src={books[bookId].image} alt="The book" className={{}} />
+                <img src={books[bookId].image} alt="The book" />
                 <div className="book-name-title">{books[bookId].name}</div>
                 <div className="description">{books[bookId].description}</div>
             </div>

@@ -8,9 +8,9 @@ const Header = () => {
         <>
             <header className="header-background">
                 <div className="content-header">
-                    <a href="#">
+                    <Link Link to="/">
                         <img src="/images/logo.png" alt="Logo" />
-                    </a>
+                    </Link>
                     <nav className="header-navigation">
                         <ul className="header-navigation-list">
                             <li>
