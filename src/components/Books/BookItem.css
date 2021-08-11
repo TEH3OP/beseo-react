@@ -13,9 +13,25 @@
     margin-bottom: 50px;
 }
 
-.book-frame>img{
-    width: 50%;
-    height: auto;
+.book-frame-img{
+    display: flex;
+}
+
+.book-frame-img img{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.book-frame-favorite{
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.book-frame-favorite > button{
+    height: fit-content;
 }
 
 .book-name-title{

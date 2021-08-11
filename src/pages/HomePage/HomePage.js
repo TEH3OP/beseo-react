@@ -9,10 +9,13 @@ import Home4TheBest from './Home4TheBest/Home4TheBest'
 import Home5Customers from './Home5Customers/Home5Customers'
 import Home6Boost from './Home6Boost/Home6Boost'
 import Home7GetFreePricing from './Home7GetFreePricing/Home7GetFreePricing'
+import TitleCarousel from '../../components/TitleCaorusel/TitleCarousel'
 
 const HomePage = ({ onFilterButtonClick }) => {
     return (
         <main>
+            <TitleCarousel />
+
             <Home1Welcome />
 
             <Home2Results />

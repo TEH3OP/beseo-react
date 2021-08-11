@@ -5,6 +5,9 @@ import '../../assets/styles/style_grid.css'
 import './BookItem.css'
 import { useHistory, useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Button from '@material-ui/core/Button'
+import FavoriteIcon from '@material-ui/icons/Favorite'
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 // import { Card } from '@material-ui/core'
 
 const BookItem = ({
@@ -14,7 +17,7 @@ const BookItem = ({
     category,
     image,
     onFilterButtonClick,
-    // categoryClicked = '',
+    isLiked = false,
 }) => {
     const history = useHistory()
     const location = useLocation()
@@ -43,20 +46,31 @@ const BookItem = ({
                 </button>
             </div>
 
-            <Link
-                to={`/book/${id}`}
-                style={
-                    ({ display: 'block' },
-                    // { cursor: 'pointer' },
-                    { textDecoration: 'none' })
-                }
-            >
-                <div className="book-frame">
+            <div className="book-frame">
+                <div className="book-frame-img">
                     <img src={image} alt="The book" />
+                    <div className="book-frame-favorite">
+                        <Button variant="outlined">
+                            {isLiked ? (
+                                <FavoriteIcon />
+                            ) : (
+                                <FavoriteBorderIcon />
+                            )}
+                        </Button>
+                    </div>
+                </div>
+                <Link
+                    to={`/book/${id}`}
+                    style={
+                        ({ display: 'block' },
+                        // { cursor: 'pointer' },
+                        { textDecoration: 'none' })
+                    }
+                >
                     <div className="book-name-title">{name}</div>
                     <div className="description">{description}</div>
-                </div>
-            </Link>
+                </Link>
+            </div>
         </div>
     )
 }
@@ -68,6 +82,7 @@ BookItem.propTypes = {
     category: PropTypes.string,
     image: PropTypes.string,
     onFilterButtonClick: PropTypes.func,
+    isLiked: PropTypes.bool,
     // categoryClicked: PropTypes.string,
 }
 
