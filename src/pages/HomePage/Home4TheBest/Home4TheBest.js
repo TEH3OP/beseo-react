@@ -1,6 +1,4 @@
 import React from 'react'
-import '../../../assets/styles/style.css'
-import '../../../assets/styles/style_grid.css'
 import './style_the_best.css'
 
 const Home4TheBest = () => (

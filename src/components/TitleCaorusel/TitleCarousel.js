@@ -7,8 +7,12 @@ import './title_carousel.css'
 const TitleCarousel = () => {
     return (
         <div className="carousel-page-background">
-            <div className="container">
-                <Carousel showThumbs={false} infiniteLoop={true}>
+            <div>
+                <Carousel
+                    showThumbs={false}
+                    infiniteLoop={true}
+                    showStatus={false}
+                >
                     <div>
                         <img src="images/slider_seo-logo.jpg" />
                         <p className="legend">SEO is your way to success</p>

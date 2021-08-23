@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import BooksList from '../../components/Books/BooksList'
-import './style_love_us.css'
 import Home1Welcome from './Home1Welcome/Home1Welcome'
 import Home2Results from './Home2Results/Home2Results'
 import Home3Offer from './Home3Offer/Home3Offer'

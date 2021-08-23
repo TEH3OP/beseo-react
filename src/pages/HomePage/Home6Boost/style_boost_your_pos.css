@@ -1,5 +1,5 @@
 .boost-your-pos-background {
-    padding: 40px 0;
+    padding: 40px 0 20px;
     background-color: #ece5d4;
 }
 
@@ -7,6 +7,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .boost-your-pos-frame>div {
@@ -14,9 +16,12 @@
     font-size: 30px;
     line-height: 30px;
     font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .boost-your-pos-frame>img{
     margin-left: 20px;
     margin-right: 20px;
+    height: fit-content;
 }
