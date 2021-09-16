@@ -2,6 +2,11 @@
     background-color: lightskyblue;
 }
 
+.carousel-container{
+    padding: 0;
+
+}
+
 .carousel .slide .legend {
     background: rgba(255, 255, 255, 0.8);
     color: black;

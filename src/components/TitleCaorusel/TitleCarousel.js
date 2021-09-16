@@ -7,7 +7,7 @@ import './title_carousel.css'
 const TitleCarousel = () => {
     return (
         <div className="carousel-page-background">
-            <div>
+            <div className="container carousel-container">
                 <Carousel
                     showThumbs={false}
                     infiniteLoop={true}
