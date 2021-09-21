@@ -18,6 +18,7 @@ const BookItem = ({
     image,
     onFilterButtonClick,
     isLiked = false,
+    clickLike,
 }) => {
     const history = useHistory()
     const location = useLocation()
@@ -50,7 +51,10 @@ const BookItem = ({
                 <div className="book-frame-img">
                     <img src={image} alt="The book" />
                     <div className="book-frame-favorite">
-                        <Button variant="outlined">
+                        <Button
+                            variant="outlined"
+                            onClick={() => clickLike(id)}
+                        >
                             {isLiked ? (
                                 <FavoriteIcon />
                             ) : (
@@ -83,6 +87,7 @@ BookItem.propTypes = {
     image: PropTypes.string,
     onFilterButtonClick: PropTypes.func,
     isLiked: PropTypes.bool,
+    clickLike: PropTypes.func,
     // categoryClicked: PropTypes.string,
 }
 
