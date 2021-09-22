@@ -17,9 +17,13 @@
     display: flex;
 }
 
-.book-frame-img img{
+.book-frame-img a{
     flex: 0 0 50%;
     max-width: 50%;
+}
+
+.book-frame-img a img{
+    max-width: 100%;
 }
 
 .book-frame-favorite{
@@ -51,4 +55,10 @@
 
 .book-category-button{
     margin-left: 10px;
+}
+
+.link{
+    display: block;
+    cursor : pointer;
+    text-decoration: none;
 }

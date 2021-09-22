@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import FavoriteIcon from '@material-ui/icons/Favorite'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
+import { connect } from 'react-redux'
 // import { Card } from '@material-ui/core'
 
 const BookItem = ({
@@ -49,7 +50,9 @@ const BookItem = ({
 
             <div className="book-frame">
                 <div className="book-frame-img">
-                    <img src={image} alt="The book" />
+                    <Link to={`/book/${id}`} className="link">
+                        <img src={image} alt="The book" />
+                    </Link>
                     <div className="book-frame-favorite">
                         <Button
                             variant="outlined"
@@ -63,14 +66,7 @@ const BookItem = ({
                         </Button>
                     </div>
                 </div>
-                <Link
-                    to={`/book/${id}`}
-                    style={
-                        ({ display: 'block' },
-                        // { cursor: 'pointer' },
-                        { textDecoration: 'none' })
-                    }
-                >
+                <Link to={`/book/${id}`} className="link">
                     <div className="book-name-title">{name}</div>
                     <div className="description">{description}</div>
                 </Link>
@@ -91,4 +87,14 @@ BookItem.propTypes = {
     // categoryClicked: PropTypes.string,
 }
 
-export default BookItem
+const mapLikeToProps = (state, { id }) => ({
+    isLiked: state.likeBooksState[id],
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    // addLike: (id) => dispatch({ type: 'LIKE', id }),
+    // removeLike: (id) => dispatch({ type: 'DISLIKE', id }),
+    clickLike: (id) => dispatch({ type: 'TOGGLE_LIKE', id }),
+})
+
+export default connect(mapLikeToProps, mapDispatchToProps)(BookItem)

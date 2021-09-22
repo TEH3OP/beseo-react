@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import BookItem from './BookItem'
 import bookArray from './booksArray'
@@ -10,11 +10,11 @@ const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
     // console.log(selectedCategory)
 
     // const bookFiteredArray =
-    const [isLiked, toggleLiked] = useState({ 2: true })
+    // const [isLiked, toggleLiked] = useState({ 2: true })
 
-    const clickLike = (id) => {
-        toggleLiked({ ...isLiked, [id]: !isLiked[id] })
-    }
+    // const clickLike = (id) => {
+    //     toggleLiked({ ...isLiked, [id]: !isLiked[id] })
+    // }
 
     return (
         <>
@@ -54,8 +54,8 @@ const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
                                                 onFilterButtonClick={
                                                     onFilterButtonClick
                                                 }
-                                                isLiked={isLiked[id]}
-                                                clickLike={clickLike}
+                                                // isLiked={isLiked[id]}
+                                                // clickLike={clickLike}
                                             />
                                         )
                                     }
@@ -71,6 +71,7 @@ const BooksList = ({ onFilterButtonClick, selectedCategory = '' }) => {
 BooksList.propTypes = {
     onFilterButtonClick: PropTypes.func,
     selectedCategory: PropTypes.string,
+    isLiked: PropTypes.bool,
 }
 
 export default BooksList
