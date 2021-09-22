@@ -66,6 +66,7 @@ const BooksList = ({
                                         category,
                                         image,
                                     }) => {
+                                        console.log('id', id)
                                         return (
                                             <BookItem
                                                 key={id}

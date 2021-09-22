@@ -49,6 +49,7 @@ const BookItem = ({
             </div>
 
             <div className="book-frame">
+                {console.log('id', id)}
                 <div className="book-frame-img">
                     <Link to={`/book/${id}`} className="link">
                         <img src={image} alt="The book" />
@@ -87,9 +88,9 @@ BookItem.propTypes = {
     // categoryClicked: PropTypes.string,
 }
 
-const mapLikeToProps = (state, { id }) => ({
-    isLiked: state.likeBooksState[id],
-})
+// const mapLikeToProps = (state, { id }) => ({
+//     isLiked: state.likeBooksState[id],
+// })
 
 const mapDispatchToProps = (dispatch) => ({
     // addLike: (id) => dispatch({ type: 'LIKE', id }),
@@ -97,4 +98,4 @@ const mapDispatchToProps = (dispatch) => ({
     clickLike: (id) => dispatch({ type: 'TOGGLE_LIKE', id }),
 })
 
-export default connect(mapLikeToProps, mapDispatchToProps)(BookItem)
+export default connect(null, mapDispatchToProps)(BookItem)

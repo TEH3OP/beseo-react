@@ -1,9 +1,6 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
-import { Route, Switch, useParams, useRouteMatch } from 'react-router-dom'
-import BookItem from '../../components/Books/BookItem'
+import { Route, Switch } from 'react-router-dom'
 import BookItemFull from '../../components/Books/BookItemFull'
-import booksArray from '../../components/Books/booksArray'
 import CategoriesPage from '../../pages/CategoriesPage/CategoriesPage'
 import HomePage from '../../pages/HomePage/HomePage'
 
