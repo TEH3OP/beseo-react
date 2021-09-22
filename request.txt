@@ -1,0 +1,60 @@
+{
+   "booksArray":[
+      {
+         "id":5,
+         "name":"HTML 101 The Essential Beginner's Guide to Learning HTML Coding",
+         "description":"With so much information about web development and online coding tutorials out there, it can be difficult to know where to start. Many guides, websites and books can be confusing and don’t make it easy for those starting out, wanting to build a solid foundation and understanding.",
+         "category":"HTML",
+         "image":"https://raw.githubusercontent.com/TEH3OP/beseo-react/master-hw5/public/books_image/5_html101.jpg"
+      },
+      {
+         "id":"6",
+         "name":"HTML CSS in 8 Hours, For Beginners, Learn Coding Fast!",
+         "description":"This Book Absolutely for Beginners:\"HTML CSS in 8 Hours\" covers all essential HTML and CSS knowledge. You can learn complete primary skills of HTML and CSS fast and easily.",
+         "category":"HTML",
+         "image":"https://raw.githubusercontent.com/TEH3OP/beseo-react/master-hw5/public/books_image/6_html_css.jpg"
+      },
+      {
+         "id":1,
+         "name":"FullStack React",
+         "description":"This book broadens our understanding of multiple frameworks and ways to employ full-stack development. You will be a confident developer, after digesting the topics in this important text. All contributors are respected authors and developers, with extensive experience with many languages and frameworks",
+         "category":"React",
+         "image":"https://raw.githubusercontent.com/TEH3OP/beseo-react/master-hw5/public/books_image/1_fullstack_react.jpg"
+      },
+      {
+         "id":2,
+         "name":"HTML To React: The Ultimate Guide",
+         "description":"This is an amazing book for anyone who is struggling with web technologies and wants to learn HTML to React along with all the tools like Git, JavaScript, etc. This book will teach you everything about Web Development to build scalable, production-ready web applications like a pro.",
+         "category":"React",
+         "image":"https://raw.githubusercontent.com/TEH3OP/beseo-react/master-hw5/public/books_image/2_html_to_react.jpg"
+      },
+      {
+         "id":3,
+         "name":"Learning React: Functional Web Development with React and Redux",
+         "description":"Beginners may want to step back from intense immersion in advanced React coding with this book. The authors recognized that some new developers may be intimidated by the sheer size and volume of React material and created a way to ease into the community.",
+         "category":"React",
+         "image":"https://raw.githubusercontent.com/TEH3OP/beseo-react/master-hw5/public/books_image/3_learning_react.jpg"
+      },
+      {
+         "id":4,
+         "name":"Wordpress For Beginners 2019",
+         "description":"WordPress is an extremely popular and amazingly powerful web content management system. If you want to spend less time struggling with complex instructions, and more time building sites that make you proud, this is the book for you!",
+         "category":"Wordpress",
+         "image":"https://raw.githubusercontent.com/TEH3OP/beseo-react/master-hw5/public/books_image/4_wordpress_for_beginners.jpg"
+      },
+      {
+         "id":7,
+         "name":"The best SEO book I have read is The Art of SEO: Mastering Search Engine Optimization",
+         "description":"The Art of SEO provides a comprehensive overview of all elements of SEO, from customizing a strategy, initial implementation and keyword research, to website development and technical insights.",
+         "category":"React",
+         "image":"https://raw.githubusercontent.com/TEH3OP/beseo-react/master-hw5/public/books_image/7_art-of-seo-229x300.jpg"
+      },
+      {
+         "id":8,
+         "name":"Ultimate Guide to Link Building",
+         "description":"This book focuses in on one of the most important aspects of SEO, building links from other websites. The book provides plenty of ideas on how to find opportunities in your niche, things that can be applicable regardless of the type of website you’re working with.",
+         "category":"Wordpress",
+         "image":"https://raw.githubusercontent.com/TEH3OP/beseo-react/master-hw5/public/books_image/8_ultimate-guide-to-linkbuilding-240x300.jpg"
+      }
+   ]
+}
