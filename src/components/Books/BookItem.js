@@ -88,9 +88,9 @@ BookItem.propTypes = {
     // categoryClicked: PropTypes.string,
 }
 
-// const mapLikeToProps = (state, { id }) => ({
-//     isLiked: state.likeBooksState[id],
-// })
+const mapLikeToProps = (state, { id }) => ({
+    isLiked: state.likeBooksState[id],
+})
 
 const mapDispatchToProps = (dispatch) => ({
     // addLike: (id) => dispatch({ type: 'LIKE', id }),
@@ -98,4 +98,4 @@ const mapDispatchToProps = (dispatch) => ({
     clickLike: (id) => dispatch({ type: 'TOGGLE_LIKE', id }),
 })
 
-export default connect(null, mapDispatchToProps)(BookItem)
+export default connect(mapLikeToProps, mapDispatchToProps)(BookItem)

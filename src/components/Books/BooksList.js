@@ -66,11 +66,10 @@ const BooksList = ({
                                         category,
                                         image,
                                     }) => {
-                                        console.log('id', id)
                                         return (
                                             <BookItem
-                                                key={id}
-                                                id={id}
+                                                key={+id}
+                                                id={+id}
                                                 name={name}
                                                 description={description}
                                                 category={category}
@@ -95,7 +94,6 @@ const BooksList = ({
 BooksList.propTypes = {
     onFilterButtonClick: PropTypes.func,
     selectedCategory: PropTypes.string,
-    isLiked: PropTypes.bool,
     receiveArray: PropTypes.func,
 }
 
